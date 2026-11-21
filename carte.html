@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mathis Thevenin – Toituréa | Carte de visite</title>
+<meta name="description" content="Carte de visite de Mathis Thevenin, charpentier couvreur zingueur à Ambierle (Loire). Enregistrez le contact, appelez, ou laissez vos coordonnées.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1c2125">
+<link rel="icon" type="image/png" href="images/logo-toiturea-sceau.png">
+<link rel="apple-touch-icon" href="images/logo-toiturea-sceau.png">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Toituréa">
+<meta property="og:title" content="Mathis Thevenin – Toituréa">
+<meta property="og:description" content="Charpentier couvreur zingueur à Ambierle et Roanne. Devis gratuit au 06 50 08 22 42.">
+<meta property="og:url" content="https://www.toiturea.fr/carte">
+<meta property="og:image" content="https://www.toiturea.fr/images/logo-toiturea-sceau.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&amp;family=Barlow+Condensed:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{--anth:#22282c;--anth2:#1c2125;--or:#ee6633;--or2:#d9572a;--gris:#59626a;--bord:#d6dadd;--fond:#f2f3f4;--txt:#1c2125}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Barlow','Segoe UI',system-ui,sans-serif;font-size:16px;line-height:24px;font-weight:500;color:var(--txt);background:var(--fond)}
+h1,h2{font-family:'Barlow Condensed','Barlow','Segoe UI',sans-serif;margin:0;line-height:1.05}
+a{color:inherit}
+.page{max-width:480px;margin:0 auto;min-height:100vh;background:#fff;box-shadow:0 0 40px rgba(20,24,27,.08)}
+
+/* En-tête */
+.tete{position:relative;padding:28px 20px 26px;color:#fff;text-align:center;
+  background:linear-gradient(180deg,rgba(28,33,37,.55),rgba(28,33,37,.95)),url(images/mathis-couvreur-zingueur-pose-gouttiere.jpg) center 30%/cover;
+  padding-top:max(28px,env(safe-area-inset-top))}
+.sceau{width:112px;height:112px;border-radius:999px;display:block;margin:0 auto 14px;box-shadow:0 0 0 4px rgba(255,255,255,.9),0 14px 30px rgba(0,0,0,.45)}
+.tete h1{font-size:36px;font-weight:800;text-transform:uppercase;letter-spacing:.01em}
+.tete .metier{margin:6px 0 0;font-weight:700;color:var(--or);font-size:17px}
+.tete .lieu{margin:4px 0 0;color:rgba(255,255,255,.82);font-size:15px}
+
+/* Bouton principal */
+.zone{padding:20px}
+.enreg{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;border:0;border-radius:14px;background:var(--or);color:var(--anth2);font:inherit;font-size:18px;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:0 8px 20px rgba(238,102,51,.3)}
+.enreg:active{background:var(--or2)}
+.enreg svg{width:22px;height:22px}
+
+/* Grille d'actions */
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.act{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:84px;padding:10px 6px;border:1.5px solid var(--bord);border-radius:14px;background:#fff;text-decoration:none;font-weight:700;font-size:14px;line-height:17px;color:var(--anth);text-align:center;cursor:pointer;font-family:inherit}
+.act:active{border-color:var(--or);background:#fdf1ec}
+.act svg{width:26px;height:26px;stroke:var(--anth)}
+
+/* Bloc échange */
+.echange{margin:6px 20px 0;padding:22px 18px;border-radius:18px;background:var(--anth2);color:#eef0f1}
+.echange h2{font-size:28px;text-transform:uppercase;letter-spacing:.01em}
+.echange .sous{margin:6px 0 16px;color:rgba(255,255,255,.78);font-size:15px;line-height:22px}
+.champ{display:flex;flex-direction:column;gap:6px;margin-bottom:12px;font-size:12px;line-height:16px;font-weight:700;letter-spacing:.08em;color:#a8b1b7;text-transform:uppercase}
+.champ input,.champ select,.champ textarea{font:inherit;font-size:16px;letter-spacing:0;text-transform:none;font-weight:500;color:var(--txt);padding:12px;border:1px solid #8d969c;border-radius:10px;background:#fff;min-height:48px;width:100%}
+.champ textarea{min-height:84px;resize:vertical}
+.champ input:focus,.champ select:focus,.champ textarea:focus{outline:3px solid rgba(238,102,51,.5);outline-offset:1px}
+.deux{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.rgpd{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:19px;color:rgba(255,255,255,.75);margin:4px 0 16px}
+.rgpd input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--or)}
+.rgpd a{color:#fff}
+.envoyer{width:100%;min-height:54px;border:0;border-radius:12px;background:var(--or);color:var(--anth2);font:inherit;font-size:17px;font-weight:800;cursor:pointer}
+.envoyer:disabled{opacity:.5}
+.erreur{margin:10px 0 0;color:#ffb4a0;font-size:14px;line-height:20px;min-height:0}
+.cache{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.merci{text-align:center;padding:10px 0 4px}
+.merci .ok{width:60px;height:60px;border-radius:999px;background:var(--or);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;animation:pop .5s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:none;opacity:1}}
+.merci h2{font-size:28px}
+.merci p{margin:8px 0 0;color:rgba(255,255,255,.8)}
+
+/* QR plein écran */
+.qr-fond{position:fixed;inset:0;z-index:50;background:rgba(28,33,37,.92);display:flex;align-items:center;justify-content:center;padding:24px}
+.qr-fond[hidden]{display:none}
+.qr-boite{background:#fff;border-radius:20px;padding:22px;text-align:center;width:min(340px,100%)}
+.qr-boite svg{width:100%;height:auto;display:block}
+.qr-boite p{margin:12px 0 0;font-weight:700}
+.qr-boite button{margin-top:14px;font:inherit;font-weight:800;border:0;border-radius:10px;background:var(--anth);color:#fff;min-height:46px;padding:0 22px;cursor:pointer}
+
+.pied{padding:26px 20px 34px;text-align:center;color:var(--gris);font-size:13px;line-height:20px}
+.pied a{color:var(--anth);font-weight:700}
+.pied img{width:150px;height:auto;margin:0 auto 10px;display:block;border-radius:8px}
+@media (min-width:520px){body{padding:24px 0}.page{border-radius:22px;overflow:hidden;min-height:0}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="tete">
+  <img class="sceau" src="images/logo-toiturea-sceau.png" alt="Toituréa" width="112" height="112">
+  <h1>Mathis Thevenin</h1>
+  <p class="metier">Charpentier · Couvreur · Zingueur</p>
+  <p class="lieu">Toituréa · Ambierle, Roanne et 30 km autour</p>
+</header>
+
+<div class="zone">
+  <a class="enreg" href="toiturea.vcf" download="Toiturea-Mathis-Thevenin.vcf" id="btn-vcf">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+    Enregistrer mon contact
+  </a>
+
+  <div class="actions">
+    <a class="act" href="tel:+33650082242">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      Appeler
+    </a>
+    <a class="act" href="https://wa.me/33650082242?text=Bonjour%20Mathis%2C%20" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 9.5c.3 1.6 1.9 3.6 3.6 4.4l1.2-1 2 .9c-.2 1-1 1.7-2 1.6-2.6-.3-5.5-3.2-5.8-5.8-.1-1 .6-1.8 1.6-2l.9 2z"/></svg>
+      WhatsApp
+    </a>
+    <a class="act" href="sms:+33650082242">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      SMS
+    </a>
+    <a class="act" href="mailto:toiturea.contact@gmail.com?subject=Contact%20depuis%20votre%20carte">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+      E-mail
+    </a>
+    <a class="act" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      Site internet
+    </a>
+    <a class="act" href="index.html#contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>
+      Devis gratuit
+    </a>
+  </div>
+</div>
+
+<section class="echange" id="echange" aria-labelledby="titre-echange">
+  <div id="bloc-form">
+    <h2 id="titre-echange">Échangeons nos coordonnées</h2>
+    <p class="sous">Laissez-moi les vôtres : je les reçois directement et je vous recontacte.</p>
+
+    <form name="echange-carte" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="form-echange" novalidate>
+      <input type="hidden" name="form-name" value="echange-carte">
+      <input type="hidden" name="source" id="champ-source" value="carte">
+      <p class="cache"><label>Ne pas remplir : <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+      <label class="champ">Prénom et nom *<input type="text" name="nom" autocomplete="name" required placeholder="Ex. : Julie Martin"></label>
+      <div class="deux">
+        <label class="champ">Téléphone<input type="tel" name="telephone" autocomplete="tel" inputmode="tel" placeholder="06 …"></label>
+        <label class="champ">Code postal<input type="text" name="code_postal" autocomplete="postal-code" inputmode="numeric" maxlength="5" placeholder="42300"></label>
+      </div>
+      <label class="champ">E-mail<input type="email" name="email" autocomplete="email" placeholder="julie@exemple.fr"></label>
+      <label class="champ">Vous êtes
+        <select name="profil">
+          <option value="Particulier – projet de toiture">Un particulier avec un projet</option>
+          <option value="Professionnel – partenariat">Un professionnel (partenariat, sous-traitance)</option>
+          <option value="Entreprise / société">Une entreprise ou une société</option>
+          <option value="Autre">Autre</option>
+        </select>
+      </label>
+      <label class="champ">Entreprise (facultatif)<input type="text" name="entreprise" autocomplete="organization"></label>
+      <label class="champ">Un mot sur votre besoin (facultatif)<textarea name="message" placeholder="Ex. : fuite au-dessus du garage, devis gouttières…"></textarea></label>
+
+      <label class="rgpd"><input type="checkbox" name="consentement" value="oui" required><span>J'accepte que Toituréa conserve ces informations pour me recontacter. <a href="confidentialite.html">Confidentialité</a></span></label>
+
+      <button class="envoyer" type="submit" id="btn-envoyer">Envoyer mes coordonnées</button>
+      <p class="erreur" id="erreur" role="alert"></p>
+    </form>
+  </div>
+
+  <div class="merci" id="merci" hidden>
+    <div class="ok"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1c2125" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+    <h2>Merci <span id="merci-nom"></span> !</h2>
+    <p>J'ai bien reçu vos coordonnées, je vous recontacte rapidement.</p>
+    <p style="margin-top:16px"><a class="enreg" href="toiturea.vcf" download="Toiturea-Mathis-Thevenin.vcf">Enregistrer mon contact</a></p>
+  </div>
+</section>
+
+<div class="zone">
+  <div class="actions" style="grid-template-columns:1fr 1fr;margin-top:6px">
+    <button class="act" type="button" id="btn-partager">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+      Partager la carte
+    </button>
+    <button class="act" type="button" id="btn-qr">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>
+      Afficher le QR code
+    </button>
+  </div>
+</div>
+
+<footer class="pied">
+  <img src="images/logo-toiturea.png" alt="TOITURÉA – Charpente, couverture, zinguerie" width="150" height="39">
+  Toituréa · Mathis Thevenin · 166 route de Rouillère, 42820 Ambierle<br>
+  <a href="https://www.toiturea.fr/">www.toiturea.fr</a> · <a href="tel:+33650082242">06 50 08 22 42</a>
+</footer>
+</div>
+
+<div class="qr-fond" id="qr-fond" hidden role="dialog" aria-modal="true" aria-label="QR code de la carte">
+  <div class="qr-boite">
+    <svg role="img" aria-label="QR code vers toiturea.fr/carte" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" class="qr"><path fill="#fff" d="M0 0h33v33h-33z"/><path class="qrline" stroke="#1c2125" d="M2 2.5h7m1 0h1m2 0h1m1 0h2m7 0h7m-29 1h1m5 0h1m4 0h1m1 0h2m2 0h4m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m4 0h1m4 0h2m1 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h5m2 0h1m6 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h3m3 0h5m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h2m1 0h2m3 0h2m1 0h2m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h1m1 0h1m1 0h2m1 0h6m-21 1h1m3 0h1m1 0h4m1 0h1m1 0h1m2 0h2m2 0h6m2 0h1m-28 1h2m4 0h2m1 0h1m1 0h5m1 0h1m1 0h9m-29 1h1m1 0h5m1 0h2m1 0h2m2 0h1m4 0h1m1 0h3m3 0h1m-29 1h3m1 0h1m3 0h2m1 0h2m1 0h2m1 0h2m2 0h2m1 0h2m1 0h2m-28 1h3m1 0h2m2 0h2m1 0h6m1 0h3m5 0h1m-28 1h2m1 0h3m1 0h1m2 0h1m1 0h1m2 0h1m2 0h1m3 0h1m1 0h5m-28 1h2m1 0h3m1 0h1m1 0h1m2 0h3m1 0h1m2 0h1m3 0h3m1 0h1m-29 1h3m1 0h2m1 0h1m2 0h4m2 0h3m1 0h1m6 0h2m-26 1h1m2 0h1m1 0h3m1 0h2m3 0h1m1 0h3m1 0h1m3 0h1m-28 1h2m2 0h1m3 0h1m1 0h1m1 0h5m5 0h4m1 0h2m-27 1h2m1 0h5m1 0h1m3 0h2m4 0h1m2 0h1m1 0h1m1 0h1m-27 1h2m1 0h1m2 0h4m2 0h1m1 0h2m1 0h1m2 0h1m4 0h2m-29 1h3m3 0h2m4 0h3m1 0h2m1 0h7m2 0h1m-21 1h5m2 0h2m3 0h1m3 0h1m3 0h1m-29 1h7m1 0h1m2 0h5m1 0h4m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h3m1 0h1m2 0h2m1 0h2m3 0h1m2 0h2m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m2 0h2m1 0h7m1 0h1m-28 1h1m1 0h3m1 0h1m2 0h4m1 0h3m1 0h1m1 0h2m1 0h1m4 0h1m-29 1h1m1 0h3m1 0h1m3 0h1m1 0h4m1 0h3m5 0h4m-29 1h1m5 0h1m2 0h1m1 0h3m3 0h4m1 0h1m1 0h2m1 0h2m-29 1h7m1 0h1m1 0h2m1 0h1m1 0h4m1 0h1m2 0h2m2 0h1"/></svg>
+    <p>Scannez pour ouvrir ma carte</p>
+    <button type="button" id="btn-qr-fermer">Fermer</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var URL_CARTE = "https://www.toiturea.fr/carte";
+
+  // D'où vient la visite : ?src=nfc (puce), ?src=qr (QR code), sinon "lien"
+  var src = new URLSearchParams(location.search).get("src") || "lien";
+  document.getElementById("champ-source").value = "carte-" + src.replace(/[^a-z0-9-]/gi, "").slice(0, 20);
+
+  // Formulaire d'échange (reçu par Netlify Forms → e-mail à Toituréa)
+  var form = document.getElementById("form-echange");
+  var err = document.getElementById("erreur");
+  var btn = document.getElementById("btn-envoyer");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    err.textContent = "";
+    var d = new FormData(form);
+    var nom = (d.get("nom") || "").trim();
+    var tel = (d.get("telephone") || "").trim();
+    var mail = (d.get("email") || "").trim();
+    if (!nom) { err.textContent = "Indiquez votre prénom et votre nom."; return; }
+    if (!tel && !mail) { err.textContent = "Laissez au moins un téléphone ou un e-mail pour que je puisse vous recontacter."; return; }
+    if (mail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)) { err.textContent = "L'adresse e-mail semble incomplète."; return; }
+    if (!form.consentement.checked) { err.textContent = "Cochez la case d'accord pour que je puisse conserver vos coordonnées."; return; }
+    btn.disabled = true; btn.textContent = "Envoi…";
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(d).toString()
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      document.getElementById("merci-nom").textContent = nom.split(" ")[0];
+      document.getElementById("bloc-form").hidden = true;
+      document.getElementById("merci").hidden = false;
+      document.getElementById("echange").scrollIntoView({ behavior: "smooth", block: "start" });
+    }).catch(function () {
+      btn.disabled = false; btn.textContent = "Envoyer mes coordonnées";
+      err.innerHTML = 'L\'envoi n\'a pas fonctionné. Vous pouvez m\'envoyer un <a href="sms:+33650082242" style="color:#fff">SMS</a> ou m\'appeler au <a href="tel:+33650082242" style="color:#fff">06 50 08 22 42</a>.';
+    });
+  });
+
+  // Partager la carte (menu de partage du téléphone, sinon copie du lien)
+  document.getElementById("btn-partager").addEventListener("click", function () {
+    var data = { title: "Mathis Thevenin – Toituréa", text: "Charpentier couvreur zingueur à Ambierle et Roanne", url: URL_CARTE };
+    if (navigator.share) { navigator.share(data).catch(function () {}); return; }
+    try { navigator.clipboard.writeText(URL_CARTE); this.lastChild.textContent = " Lien copié !"; } catch (e) { prompt("Lien de la carte :", URL_CARTE); }
+  });
+
+  // QR code plein écran (pour qu'un client scanne directement ton téléphone)
+  var fond = document.getElementById("qr-fond");
+  document.getElementById("btn-qr").addEventListener("click", function () { fond.hidden = false; });
+  document.getElementById("btn-qr-fermer").addEventListener("click", function () { fond.hidden = true; });
+  fond.addEventListener("click", function (e) { if (e.target === fond) fond.hidden = true; });
+})();
+</script>
+</body>
+</html>
